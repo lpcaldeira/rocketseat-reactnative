@@ -19,3 +19,16 @@ Agora, vamos começar a fazer a navegação do nosso app com `yarn add react-nav
 
 Depois de configurar e estilizar, vamos instalar o `yarn add axios` para fazer as requisições para a API `https://rocketseat-node.herokuapp.com/api`.
 
+Para simular um State em StateLess, podemos ver a `linha 8` do `product.js`.
+
+O parametro está sendo passado pelo `TouchableOpacity` em `main.js` e a troca de menus é executada pelo `routes.js`.
+
+Agora, temos que adicionar o pacote do `WebView` que foi removido de dentro do react-native usando o comando `yarn add react-native-webview` e o link dele depois `react-native link react-native-webview`.
+
+Para rodar certinho, tive que abriro Android Studio e fazer o build por lá, gerando assim os gradle necessários.
+
+Depois executei novamente o `react-native run-android`.
+
+Comando auxiliar que talvez ajude você `react-native start --reset-cache`.
+
+Aí sim, podemos usá-lo para abrir as urls dos links do github que temos em products no formato similar ao navegador, porém sem sair do nosso app.
