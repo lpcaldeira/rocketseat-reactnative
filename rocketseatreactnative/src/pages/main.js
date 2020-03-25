@@ -7,6 +7,11 @@ export default class Main extends Component {
         title: "Rocketseat React-Native"
     }
 
+    state = {
+        products: [],
+        counter: 0
+    }
+
     componentDidMount() {
         this.loadProducts()
     }
@@ -14,13 +19,19 @@ export default class Main extends Component {
     loadProducts = async () => {
         const response = await api.get(`/products`);
         const { docs } = response.data
-        console.log(docs)
+        this.setState({
+            products: docs,
+            counter: docs.length
+        })
     }
 
     render() {
         return (
             <View>
                 <Text>Página Main</Text>
+                {this.state.products.map(product => (
+                    <Text key={product._id}>{product.title}</Text>
+                ))}
             </View>
         )
     }
