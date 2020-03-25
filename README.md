@@ -15,3 +15,5 @@ Agora, vamos entrar na pasta do projeto criado para conseguir executar `npx reac
 
 Abra o seu emulador Android ou iOS ou use a depuração direto no celular.
 
+Agora, vamos começar a fazer a navegação do nosso app com `yarn add react-navigation@2.18.3`.
+
