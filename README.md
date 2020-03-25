@@ -17,3 +17,5 @@ Abra o seu emulador Android ou iOS ou use a depuração direto no celular.
 
 Agora, vamos começar a fazer a navegação do nosso app com `yarn add react-navigation@2.18.3`.
 
+Depois de configurar e estilizar, vamos instalar o `yarn add axios` para fazer as requisições para a API `https://rocketseat-node.herokuapp.com/api`.
+
